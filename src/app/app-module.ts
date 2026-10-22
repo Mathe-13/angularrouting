@@ -6,9 +6,17 @@ import { MusicaComponent } from './components/musica-component/musica-component'
 import { CineComponent } from './components/cine-component/cine-component';
 import { appRoutingProvider, routing } from './app.routing';
 import { MenuComponent } from './components/menu-component/menu-component';
+import { NumeroDobleComponent } from './components/numero-doble-component/numero-doble-component';
 
 @NgModule({
-  declarations: [App, HomeComponent, MusicaComponent, CineComponent, MenuComponent],
+  declarations: [
+    App,
+    HomeComponent,
+    MusicaComponent,
+    CineComponent,
+    MenuComponent,
+    NumeroDobleComponent,
+  ],
   imports: [BrowserModule, routing],
   providers: [provideBrowserGlobalErrorListeners(), appRoutingProvider],
   bootstrap: [App],

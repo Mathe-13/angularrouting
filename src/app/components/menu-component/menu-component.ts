@@ -6,4 +6,8 @@ import { Component } from '@angular/core';
   styleUrl: './menu-component.css',
   templateUrl: './menu-component.html',
 })
-export class MenuComponent {}
+export class MenuComponent {
+  //EJEMPLOS, ESTE SE HA USADO EN component: numero-doble.components.ts
+  //cosntructor(private _router: Router) {}
+  //goToHome() {this._router.navigae("['/rutaparametros']", param1, param2);}
+}
