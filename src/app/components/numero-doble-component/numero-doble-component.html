@@ -1,4 +1,9 @@
 <h1>Doble parámetros</h1>
+@for (item of [].constructor(3); track $index){
+<a [routerLink]="['/doble', $index + 5]">
+    Doble {{$index + 5}}
+</a>
+}
 <button (click)="goToHome()">Ir a Home</button>
 <button (click)="redirect(13)">
     Doble 13
@@ -18,4 +23,4 @@
     No hemos recibido parámetro
 </h2>
 
-}s
+}

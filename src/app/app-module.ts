@@ -7,6 +7,8 @@ import { CineComponent } from './components/cine-component/cine-component';
 import { appRoutingProvider, routing } from './app.routing';
 import { MenuComponent } from './components/menu-component/menu-component';
 import { NumeroDobleComponent } from './components/numero-doble-component/numero-doble-component';
+import { TablaMultiplicar } from './components/tabla-multiplicar/tabla-multiplicar';
+import { MenuTabla } from './components/menu-tabla/menu-tabla';
 
 @NgModule({
   declarations: [
@@ -16,6 +18,8 @@ import { NumeroDobleComponent } from './components/numero-doble-component/numero
     CineComponent,
     MenuComponent,
     NumeroDobleComponent,
+    TablaMultiplicar,
+    MenuTabla,
   ],
   imports: [BrowserModule, routing],
   providers: [provideBrowserGlobalErrorListeners(), appRoutingProvider],

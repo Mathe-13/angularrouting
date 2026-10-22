@@ -3,6 +3,9 @@
         <a [routerLink]="['/']">Home|</a>
     </li>
     <li>
+        <a [routerLink]="['/tabla']">Tabla de multiplicar|</a>
+    </li>
+    <li>
         <a [routerLink]="['/cine']">Cine|</a>
     </li>
     <li>
@@ -12,6 +15,11 @@
         <a [routerLink]="['/doble']">Doble sin nada</a>
     </li>
     <li>
-        <a [routerLink]="['/doble/8']">Doble sin nada</a>
+        <a [routerLink]="['/doble/8']">Doble de 8</a>
     </li>
+    @for (item of [].constructor(3); track $index){
+    <a [routerLink]="['/doble', $index + 5]">
+        Doble {{$index + 5}}
+    </a>
+    }
 </ul>
